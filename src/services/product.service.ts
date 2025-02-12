@@ -10,6 +10,8 @@ interface Statistics {
   mostRemovedProducts: Array<{ id: string; count: number }>;
 }
 
+
+
 class ProductService {
   async getAllProducts(warehouseId: number): Promise<Product[]> {
     try {
