@@ -188,8 +188,6 @@ export const AddProductScreen = () => {
               </View>
             </View>
 
-            
-
             <View style={styles.inputContainer}>
               <Text style={styles.label}>Catégorie</Text>
               <View style={styles.inputWrapper}>
