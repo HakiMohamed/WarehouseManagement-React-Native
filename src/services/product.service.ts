@@ -10,8 +10,6 @@ interface Statistics {
   mostRemovedProducts: Array<{ id: string; count: number }>;
 }
 
-
-
 class ProductService {
   async getAllProducts(warehouseId: number): Promise<Product[]> {
     try {
@@ -100,6 +98,7 @@ class ProductService {
         lastUpdated: new Date().toISOString(),
         status: this.calculateStatus(newQuantity, product.minQuantity)
       };
+      
       
       await api.put(`/products/${productId}`, updatedProduct);
       return true;

@@ -13,8 +13,6 @@ interface ProductContextType {
   deleteProduct: (productId: string) => Promise<boolean>;
 }
 
-
-
 const ProductContext = createContext<ProductContextType | undefined>(undefined);
 
 export const ProductProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {

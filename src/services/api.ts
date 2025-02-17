@@ -1,7 +1,6 @@
 import axios from 'axios';
 import { API_URL } from '../config/api';
 
-
 console.log('🌐 Initialisation API avec URL:', API_URL);
 console.log('API_URL from env:', process.env.API_URL);
 
